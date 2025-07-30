@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Shop Calculator</title>
+  <script src="/index.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      margin: 0;
+      background: #faefa6;
+    }
+    body{
+      background-image: url(image/unjpg.jpg);
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: rgb(185, 87, 1);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #a48484;
+    }
+    h2 { text-align: center; }
+    label { display: block; margin: 1rem 0 0.3rem; }
+    input, select {
+      width: 100%;
+      padding: 0.7rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #4c4942;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+   
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <h2>☕️ Coffee Shop Order Calculator</h2>
+    <form id="coffeeForm">
+      
+
+      <label>👤 Name</label>
+      <input type="text" id="name" required />
+
+      <label>🎂 Age</label>
+      <input type="number" id="age" min="1" required />
+
+      <label>☕️ Coffee Type</label>
+      <select id="coffeeType">
+        <option value="espresso">Espresso</option>
+        <option value="latte">Latte</option>
+        <option value="cappuccino">Cappuccino</option>
+      </select>
+
+      <label>🧾 Quantity</label>
+      <input type="number" id="quantity" min="1" required />
+
+      <label>🧑‍🤝‍🧑 Number of People Splitting</label>
+      <input type="number" id="people" min="1" max="10" required />
+
+      <label>💰 Discount </label>
+      <select id="Discount">
+        <option value="0">%</option>
+        <option value="10">5%</option>
+        <option value="15">10%</option>
+      </select>
+
+      <label>💰 Tip Percentage</label>
+      <select id="tip">
+        <option value="0">0%</option>
+        <option value="10">5%</option>
+        <option value="15">10%</option>
+        <option value="25">15%</option>
+      </select>
+
+      <label>💰Calculate and display <select id="">
+        <option value="0, 100">Orignal total</option>
+        <option value="0, 10">Discount total</option>
+        <option value="0, 15">Final total</option>
+      </select>
+
+         <button type="submit">Calculate</button>
+    </form>
+
+  </div>
+
+  
+</body>
+</html>
